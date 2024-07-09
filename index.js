@@ -1,20 +1,20 @@
 const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
-    host: "email-ssl.com.br",
+    host: "smtp.office365.com",
      port: 587,
      secure: false,
      auth: {
-         user: "nfep4@pomardelivery.com.br",
-         pass: "pomar01112009"
+         user: "aporttec_log@outlook.com",
+         pass: "30Mariafn@"
      }
 
 });
 transporter.sendMail({
-    from: "Nfe<nfep4@pomardelivery.com.br>",
-    to: "rodrigo@aporttec.com",
+    from: "Teste de email <aporttec_log@outlook.com>",
+    to: "aporttec@gmail.com",
     subject: "teste",
-    html: "ola teste ok"
+    html: "testando envio de email ..."
 }).then(message =>{
     console.log(message);
 }).catch(err =>{
