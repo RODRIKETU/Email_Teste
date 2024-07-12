@@ -12,8 +12,8 @@ let transporter = nodemailer.createTransport({
 });
 transporter.sendMail({
     from: "Teste de email <aporttec_log@outlook.com>",
-    to: "aporttec@gmail.com",
-    subject: "teste",
+    to: "rodriketu@gmail.com,rodrigo@digmidia.com",
+    subject: "teste de envio de email <aporttec_log@outlook.com",
     html: "testando envio de email ..."
 }).then(message =>{
     console.log(message);
